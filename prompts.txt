@@ -1,0 +1,55 @@
+deves obedcer 100% a esse documento. Agora sugira uma estrutura de diretórios
+
+pode criar a estrutura de diretórios no meu projeto, mas não quero que implementes
+o código ainda, eu é quem vou especificar o que deve ser feito depois, quero apenas os
+diretórios criados. E utilize sempre o GUARDRAIL.md para consulta
+
+Estrutura para prompts (vibecoding): 
+1. Contexto
+2. Tarefa
+3. Requisitos
+4. Formato de saída
+5. Restrições
+6. Saída esperada
+
+Contexto:
+Estou a desenvolver uma aplicação agregadora de notícias com backend em Python usando Flask. A arquitetura segue separação em camadas (routes, services, models).
+
+Tarefa:
+Gere um módulo Python responsável exclusivamente pelo consumo de uma API pública de notícias.
+
+Requisitos:
+- Utiliza a NewsAPI.org como fonte de dados.
+- Endpoint: https://newsapi.org/v2/top-headlines
+- Autenticação via API key no header.
+- O módulo deve usar a biblioteca requests
+- Deve enviar pedidos HTTP para a API
+- Deve receber os dados em formato JSON
+- Deve extrair e retornar apenas os seguintes campos:
+  - title
+  - description
+  - source
+  - published_at
+  - url
+  - image
+
+Formato de saída:
+- Deve retornar uma lista de dicionários com os campos acima
+- Os nomes das chaves devem seguir exatamente os nomes definidos
+
+Tratamento de erros:
+- Deve tratar:
+  - chave de API inválida
+  - limite de requisições excedido
+  - falha de conexão
+- Deve retornar mensagens de erro padronizadas
+
+Restrições:
+- Não incluir código desnecessário
+- Não adicionar funcionalidades além das solicitadas
+- O código deve ser modular e reutilizável
+- O módulo deve ser independente (sem dependência direta do Flask)
+
+Saída esperada:
+- Código completo do módulo
+- Explicação breve das decisões tomadas

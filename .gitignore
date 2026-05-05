@@ -1,0 +1,94 @@
+# Variáveis de Ambiente
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes Virtuais
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Base de Dados
+*.db
+*.sqlite
+*.sqlite3
+smart_news.db
+
+# Node (Frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# Logs
+*.log
+logs/
+
+# Arquivos Temporários
+*.tmp
+*.temp
+*.bak
+.git/
+
+# OS
+Thumbs.db
+.DS_Store
+*.exe
+
+# API Keys e Credenciais
+config/secrets.py
+config/credentials.json
+
+# Arquivos de compilação
+*.pyc
+*.pyo
+*.pyd
+
+# Diretórios de cache
+.cache/
+*.cache
+
+# Ficheiros de testes locais
+test_results/
+coverage/

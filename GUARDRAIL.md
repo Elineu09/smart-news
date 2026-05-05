@@ -38,23 +38,96 @@ Restrições:
 ---
 
 ## Estrutura de Pastas
-/frontend
-  ├── index.html
-  ├── login.html
-  ├── register.html
-  ├── styles.css
-  └── app.js
 
-/backend
-  ├── app.py
-  ├── routes/
-  ├── services/
-  ├── models/
-  └── database/
-
-/utils
-  ├── api_client.py
-  └── ai_features.py
+smart-news/
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── js/
+│   │   │   ├── components/
+│   │   │   │   ├── auth.js
+│   │   │   │   ├── newsCard.js
+│   │   │   │   ├── newsFilter.js
+│   │   │   │   ├── preferences.js
+│   │   │   │   └── favorites.js
+│   │   │   ├── pages/
+│   │   │   │   ├── home.js
+│   │   │   │   ├── category.js
+│   │   │   │   ├── favorites.js
+│   │   │   │   └── profile.js
+│   │   │   ├── services/
+│   │   │   │   ├── api.js
+│   │   │   │   ├── authService.js
+│   │   │   │   └── storageService.js
+│   │   │   ├── utils/
+│   │   │   │   ├── helpers.js
+│   │   │   │   ├── validators.js
+│   │   │   │   └── constants.js
+│   │   │   └── app.js
+│   │   ├── css/
+│   │   │   ├── base.css
+│   │   │   ├── components.css
+│   │   │   ├── layout.css
+│   │   │   └── responsive.css
+│   │   └── assets/
+│   │       └── images/
+│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── routes/
+│   │   │   ├── __init__.py
+│   │   │   ├── auth_routes.py
+│   │   │   ├── news_routes.py
+│   │   │   ├── user_routes.py
+│   │   │   ├── preference_routes.py
+│   │   │   └── favorite_routes.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── user_service.py
+│   │   │   ├── news_api_service.py
+│   │   │   ├── preference_service.py
+│   │   │   ├── favorite_service.py
+│   │   │   ├── summarizer_service.py
+│   │   │   ├── recommender_service.py
+│   │   │   ├── sentiment_service.py
+│   │   │   └── classifier_service.py
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── user.py
+│   │   │   ├── news.py
+│   │   │   ├── preference.py
+│   │   │   └── favorite.py
+│   │   ├── middleware/
+│   │   │   ├── __init__.py
+│   │   │   └── auth_middleware.py
+│   │   ├── utils/
+│   │   │   ├── __init__.py
+│   │   │   ├── helpers.py
+│   │   │   ├── error_handler.py
+│   │   │   ├── validators.py
+│   │   │   └── decorators.py
+│   │   └── config.py
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── db.py
+│   │   └── schema.sql
+│   ├── main.py
+│   ├── requirements.txt
+│   └── .env.example
+│
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── API.md
+│   ├── DATABASE.md
+│   └── SETUP.md
+│
+├── README.md
+├── CONTEXT.md
+├── GUARDRAIL.md
+└── .gitignore
 
 ---
 
